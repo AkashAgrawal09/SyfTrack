@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:id="@+id/scrollview"
+    android:background="@drawable/back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:id="@+id/icon"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/signup"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccp_textSize="16sp"
+                        app:ccp_contentColor="#fff">
+
+                    </com.hbb20.CountryCodePicker>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:id="@+id/phoneno"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:maxLength="10"
+                        android:textColorHint="#fff"
+                        android:focusableInTouchMode="true"
+                        android:textSize="16sp"
+                        android:inputType="phone"
+                        android:textColor="#fff"
+                        android:imeOptions="actionDone"
+                        android:backgroundTint="#fff"
+                        android:hint="Mobile Number"/>
+
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/remberme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right"
+                    android:theme="@style/WhiteCheck"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="#FFFFFF"
+                    android:textColor="#fff"
+                    android:text="REMEMBER ME"/>
+
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:textColor="#fff"
+                    android:id="@+id/registerbtn"
+                    android:text="Login" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/verify"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="100dp" />
+
+                <TextView
+                    android:id="@+id/info_otp"
+                    android:text="Waiting for OTP"
+                    android:textSize="14sp"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:textColorHint="#fff"
+                android:textSize="30sp"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:hint="X X X X"
+                android:textAlignment="center"
+                android:id="@+id/otp"
+                android:backgroundTint="#fff"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#fff"
+                android:id="@+id/verifyBtn"
+                android:text="Verify"
+                android:layout_margin="15dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="50dp"
+            android:textColor="#fff"
+            android:text="OR"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_width="200dp"
+            android:textColor="#fff"
+            android:text="Login by Id"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:id="@+id/loginbyid"
+            android:layout_gravity="center"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+
+</ScrollView>

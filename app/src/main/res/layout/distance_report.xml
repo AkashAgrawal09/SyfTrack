@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/heading"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#08a5ed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Distance Report"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pp1"
+        android:layout_width="280dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/vehname" >
+
+        <AutoCompleteTextView
+            android:id="@+id/selectvehiclehistry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColorHint="#000"
+            android:textColor="#000"
+            android:background="@null"
+            android:hint="Enter Vehicle Number"
+            android:paddingLeft="5dp" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/fromdate"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Select From Date"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/seldate" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/todate"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Select To Date"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/seldate" >
+    </TextView>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="SUBMIT"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:background="#08a5ed" >
+    </Button>
+
+
+
+
+</LinearLayout>

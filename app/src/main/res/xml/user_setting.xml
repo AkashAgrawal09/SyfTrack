@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto="http://schemas.android.com/apk/res-auto">
+
+
+<PreferenceCategory android:title="Map Display Setting" >
+<ListPreference
+    android:defaultValue="Normal"
+    android:entries="@array/syncMap"
+    android:entryValues="@array/syncMapValues"
+    android:key="mapdisplay"
+    android:summary="Select the map display view"
+    android:title="Select the map display" />
+</PreferenceCategory>
+
+
+<PreferenceCategory android:title="Refresh timing" >
+<ListPreference
+    android:defaultValue="0"
+    android:entries="@array/refresh"
+    android:entryValues="@array/refreshdata"
+    android:key="refreshtiming"
+    android:summary="Set the device list refresh interval"
+    android:title="Refresh Interval" />
+</PreferenceCategory>
+
+
+</PreferenceScreen>

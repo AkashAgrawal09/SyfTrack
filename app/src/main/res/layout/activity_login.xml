@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/heading"
+android:focusableInTouchMode="true"
+    android:background="@drawable/back"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginTop="50dp"
+                android:layout_height="140dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/loginbackground"
+                android:layout_height="250dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Userid"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:maxLines="1"
+                    android:maxEms="1"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:id="@+id/username"
+                    android:maxLength="50"
+                    android:imeOptions="actionNext"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:textColorHint="#FFF"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="2dp"/>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Password"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="10dp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:maxLength="50"
+                    android:imeOptions="actionDone"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textColorHint="#FFF"
+                    android:textColor="#fff"
+                    android:layout_height="wrap_content"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="2dp"/>
+
+                <CheckBox
+                    android:id="@+id/remberme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right"
+                    android:theme="@style/WhiteCheck"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="#FFFFFF"
+                    android:textColor="#fff"
+                    android:text="REMEMBER ME"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="LOGIN"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:textColor="#fff"
+                    android:id="@+id/login"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="50dp"
+                android:textColor="#fff"
+                android:text="OR"
+
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="200dp"
+                android:textColor="#fff"
+
+                android:text="Login by Number"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:id="@+id/loginbynumber"
+                android:layout_gravity="center"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

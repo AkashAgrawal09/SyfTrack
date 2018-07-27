@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="DashBoard" />
+        <item
+            android:id="@+id/vehicle_stats"
+            android:icon="@drawable/vehiclestatus"
+            android:title="Vehicle status" />
+
+        <item
+            android:id="@+id/nearst_vehicle"
+            android:icon="@drawable/vehiclestatus"
+            android:title="Nearst Vehicle" />
+
+        <item
+            android:id="@+id/travel_summary"
+            android:icon="@drawable/traveldistance"
+            android:title="Travel Summary" />
+        <item
+            android:id="@+id/distance_report"
+            android:icon="@drawable/distancereporticon"
+            android:title="Distance Report" />
+
+        <item
+            android:id="@+id/stoppagereport"
+            android:icon="@drawable/stoppageicon"
+            android:title="Stoppage Summary"/>
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settingicon"
+            android:title="Settings"/>
+    </group>
+
+
+</menu>
